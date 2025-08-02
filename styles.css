@@ -9,7 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: #faf9f4;
-    font-family: "IBM Plex Serif";
+    font-family: "Inter";
 }
 
 .main-container {
@@ -29,7 +29,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    min-height: 600px;
 
 }
 
@@ -39,14 +38,17 @@ body {
 }
 
  .gen-container {
-    padding: 1rem;
+    display: flex;
+    padding: .5rem;
     width: 70%;
-    border: 1px solid #edd9bb;
+    border: 1px dashed #edd9bb;
+    flex-direction: row;
+    gap: .5rem;
+    background-color: #faf9f4;
 }
 
 .interface-container {
     width: 30%;
-    
 }
 
 button {
@@ -58,6 +60,7 @@ button {
     color: rgba(0, 0, 0, .6);    
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 button:hover {
@@ -66,7 +69,7 @@ button:hover {
 
 h1 {
     font-size: 2rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 .4rem 0;
     line-height: 1.5;
     font-weight: 700;
 }
@@ -77,3 +80,17 @@ p {
     font-size: 1rem;
     color: rgba(0, 0, 0, .6);
 }
+
+.new-color-a, .new-color-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, .5);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border: 1px dashed #edd9bb;}
