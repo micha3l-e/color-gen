@@ -83,14 +83,64 @@ p {
 
 .new-color-a, .new-color-b {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
     background-color: transparent;
     width: 100%;
     border-radius: 8px;
-    color: rgba(0, 0, 0, .5);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1rem;
+    padding: .5rem;
     text-transform: uppercase;
-    font-size: 1.3rem;
-    border: 1px dashed #edd9bb;}
+    border: 1px dashed #edd9bb;
+}
+
+.color-a-txt, .color-b-txt {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .5);
+    mix-blend-mode: hard-light;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 600;
+    padding: .1rem .3rem;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 100ms ease-in 100ms;
+}
+
+.color-a-txt:hover,
+.color-b-txt:hover {
+    background-color: #f9f2e3;
+}
+
+.color-a-txt::after,
+.color-b-txt::after {
+    content: attr(data-tip);
+    position: absolute;
+    background-color: #f9f2e3;
+    width: fit-content;
+    z-index: 10;
+    top: -1.6rem;
+    right: 0;
+    border-radius: 4px;
+    padding: .1rem .3rem;
+    font-size: .8rem;
+    opacity: 0;
+    transition: opacity 100ms ease-in 100ms;
+    text-transform: none;
+}
+
+.color-a-txt:hover::after, .color-b-txt:hover::after {
+    opacity: 1;
+    content: attr(data-tip);
+    position: absolute;
+    background-color: #f9f2e3;
+    width: fit-content;
+    z-index: 10;
+    top: -1.6rem;
+    right: 0;
+    border-radius: 4px;
+    padding: .1rem .3rem;
+    font-size: .8rem;
+}
+
