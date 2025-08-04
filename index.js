@@ -1,10 +1,10 @@
-let genBtn = document.getElementById("gen-btn");
-let colorsEl = document.getElementById("colors-el");
-let colorA = document.querySelector(".new-color-a");
-let colorB = document.querySelector(".new-color-b");
-let colorATxt = document.querySelector(".color-a-txt");
-let colorBTxt = document.querySelector(".color-b-txt");
-let allColorTxt = document.querySelectorAll(".color-a-txt, .color-b-txt");
+const genBtn = document.getElementById("gen-btn");
+const colorsEl = document.getElementById("colors-el");
+const colorA = document.querySelector(".new-color-a");
+const colorB = document.querySelector(".new-color-b");
+const colorATxt = document.querySelector(".color-a-txt");
+const colorBTxt = document.querySelector(".color-b-txt");
+const allColorTxt = document.querySelectorAll(".color-a-txt, .color-b-txt");
 
 
 function randomColor() {
